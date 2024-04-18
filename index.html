@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<title>Our anniversary of love</title>
+		<link rel="stylesheet" type="text/css" href="./css/format.css">
+	</head>
+
+	<body style="margin:0px">
+		<audio autoplay loop>
+			<source src="music/music.m4p" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<canvas></canvas>
+		<div id="imgTxt">
+			<span id="Txt"></span> <br />
+			<span id="tmp"></span>
+			<img id="img" src="">
+		</div>
+		<div id="heartTxt">
+			<span id="clickMe">Click!</span>
+			<div id="heart">
+				<button id="button" onclick="play()"></button>
+			</div>
+		</div>
+		<div id="content">
+			<h2 id="together">We have been together</h2>
+			<div id="timer">
+				<b id="d"></b> Days 
+				<b id="h"></b> Hours
+				<b id="m"></b> Minutes
+				<b id="s"></b> Seconds
+			</div>
+		</div>
+
+    	<div id = "typeDiv">
+        	<span id="txt1"></span> <br />
+        	<span id="txt2"></span>
+		<span id="txt3"></span>
+    	</div>		
+
+		<script >
+			var ok = 0;
+			var flag = 1;
+			var myImage = document.getElementById("img");
+			var myTxt = document.getElementById("Txt");
+			// list of images from directory
+			var imageArray = ['love/IMG_0274.jpg', 'love/IMG_3435.jpg', 'love/IMG_0461.jpg', 'love/IMG_3430.jpg', 'love/IMG_3431.jpg', 'love/IMG_0474.jpg', 'love/IMG_3432.jpg', 'love/IMG_0477.jpg', 'love/IMG_3803.JPG', 'love/IMG_0265.jpg', 'love/IMG_3400.jpg', 'love/IMG_0281.jpg', 'love/IMG_3388.jpg', 'love/IMG_3389.jpg', 'love/IMG_7339.JPG']
+			var imageIndex = 0;
+			var txtArray = ["Hello, my love!", "I love you!", "I miss you!", "I need you!", "You are my everything!", "I can't live without you!", "Em bé và gia đình khủn long", "I happy when I'm with you!", "I'm so lucky to have you!", "Cảm ơn em đã ở bên anh!", "Anh yêu em nhiều lắm!"]
+			 var len = imageArray.length;
+			var t = 0;
+		</script>
+		
+		<script type="text/javascript" src="./js/stars.js"></script>
+		<script type="text/javascript" src="./js/typeWriter.js"></script>
+		<script type="text/javascript" src="./js/date.js"></script>
+		<script type="text/javascript" src="./js/playImg.js"></script>
+	</body>
+</html>
